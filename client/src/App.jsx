@@ -4,6 +4,7 @@ import Batches from "./pages/Batches";
 import Dashboard from "./pages/Dashboard";
 import Students from "./pages/Students";
 import Sidebar from "./components/Sidebar";
+import Fees from "./pages/Fees";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("dashboard");
@@ -24,6 +25,8 @@ function App() {
         {currentPage === "students" && <Students />}
 
         {currentPage === "batches" && <Batches />}
+
+        {currentPage === "fees" && <Fees />}
       </main>
 
     </div>
